@@ -1,7 +1,23 @@
 # hse_project_hns
 
-1. (MountainCar-v0_naive)[/MountainCar-v0_naive] contains naive implementation with discrete action space: solved via discretization of state space.
+Логическая последовательность реализаций по "сложности":
 
-2. (MountainCar-v0)[/MountainCar-v0] contains DQN implementation with discrete action space
+1. [MountainCar-v0_DASS](/MountainCar-v0_DASS)
 
-3. (MountainCarContinuous-v0)[/MountainCarContinuous-v0] contains ___ implementation with discrete action space
+   Табличный Q Learning с простой дискретизаций состояний.
+
+2. [MountainCar-v0](/MountainCar-v0)
+
+   Решение классической задачи с машинкой с помощью DQN, состояния непрерывные.
+
+3. [MountainCarContinuous-v0_DAS](/MountainCarContinuous-v0_DAS)
+
+   Решение задачи с машинкой с множеством непрерывных действий с помощью DQN, действия дискретизируются по "корзинкам"
+
+4. [MountainCarContinuous-v0](/MountainCarContinuous-v0)
+
+   Решение задачи с машинкой с множеством непрерывных действий с помощью DDPG.
+
+   Нет reward shaping'а.
+
+Note: в 1-3 сделан reward shaping с потенциальным изменением награды
